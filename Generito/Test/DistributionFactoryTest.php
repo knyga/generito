@@ -12,7 +12,6 @@
 namespace Generito\Test;
 
 use Generito\Distribution\DistributionFactory;
-use Generito\Distribution\DistributionTypes;
 
 class DistributionFactoryTest extends \PHPUnit_Framework_TestCase {
 	private $factory;
@@ -22,7 +21,7 @@ class DistributionFactoryTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	public function testInstanceOf() {
-		$discrete = $this->factory->createDistribution(DistributionTypes::DISCRETE);
+		$discrete = $this->factory->createDistribution(DistributionFactory::DISCRETE);
 		$this->assertInstanceOf('Generito\Distribution\Concrete\DiscreteDistribution', $discrete);
 	}
 }

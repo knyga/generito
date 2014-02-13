@@ -13,7 +13,6 @@ namespace Generito\Test;
 
 use Generito\Generator;
 use Generito\Distribution\DistributionFactory;
-use Generito\Distribution\DistributionTypes;
 
 use Generito\Helper\Random\Random;
 
@@ -33,7 +32,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
 			14 => 50);
 
 		$distribution = (new DistributionFactory)
-			->createDistribution(DistributionTypes::DISCRETE)
+			->createDistribution(DistributionFactory::DISCRETE)
 			->setFrequencies($this->frequencies);
 
 		$this->generator = new Generator($distribution,
@@ -44,7 +43,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
 
 	public function testDiscreteGenerate() {
 		$distribution = (new DistributionFactory)
-			->createDistribution(DistributionTypes::DISCRETE)
+			->createDistribution(DistributionFactory::DISCRETE)
 			->setFrequencies($this->frequencies);
 
 		$this->generator->setDistribution($distribution);
@@ -72,7 +71,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
 
 	public function testFixedGenerate() {
 		$distribution = (new DistributionFactory)
-			->createDistribution(DistributionTypes::FIXED)
+			->createDistribution(DistributionFactory::FIXED)
 			->setFrequencies($this->frequencies);
 
 		$this->generator->setDistribution($distribution);
@@ -100,7 +99,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
 
 	public function testDiscreteGenerateRandomHandler() {
 		$distribution = (new DistributionFactory)
-			->createDistribution(DistributionTypes::DISCRETE)
+			->createDistribution(DistributionFactory::DISCRETE)
 			->setFrequencies($this->frequencies);
 
 		$this->generator->setDistribution($distribution)
@@ -113,6 +112,6 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase {
 
 		$result = $this->generator->generate(2);
 
-		var_dump($result);
+		//var_dump($result);
 	}
 }

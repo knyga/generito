@@ -11,7 +11,7 @@
 
 namespace Generito\Distribution;
 
-final class DistributionTypes {
+class DistributionTypes {
 	const DISCRETE = 'discrete';
 	const CONTINUOUS = 'continuous';
 	const FIXED = 'fixed';

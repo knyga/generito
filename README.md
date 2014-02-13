@@ -12,9 +12,10 @@ The library is easy to get up and running quickly.
 <?php
 
 use Generito\Generator;
+use Generito\DiscriptionFactory;
 
 $distribution = (new DistributionFactory)
-    ->createDistribution(DistributionTypes::DISCRETE)
+    ->createDistribution(DiscriptionFactory::DISCRETE)
     ->setFrequencies($this->frequencies);
 
 $this->generator->setDistribution($distribution)
@@ -80,7 +81,7 @@ The library uses a distribution classes to generate required number of values wi
 
 ### DiscreteDistribution
 
-Returns random value from input according to it's density.
+Returns random value from input according to its density.
 
 ```php
 $distribution = new DiscreteDistribution;
@@ -114,7 +115,7 @@ for($i=0;$i<1000;$i++) {
 ```
 
 ```
-.array(3) {
+array(3) {
   [0]=>
   int(170)
   [1]=>
@@ -194,8 +195,8 @@ array(3) {
 
 #### ContinuosDistribution
 
-Returns random value from input according to it's density. Despite DiscreteDistribution could return float values.
-
+Returns random value from input according to its density. Despite DiscreteDistribution could return float values.
+Has not implemented yet.
 
 License
 -------

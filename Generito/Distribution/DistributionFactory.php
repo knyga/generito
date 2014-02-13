@@ -15,7 +15,7 @@ use Generito\Distribution\Concrete\DiscreteDistribution;
 use Generito\Distribution\Concrete\FixedDistribution;
 //use Generito\Distribution\Concrete\ContinuousDistribution;
 
-class DistributionFactory {
+class DistributionFactory extends DistributionTypes {
 
 	/**
 	 * @param  string $type DistributionType
