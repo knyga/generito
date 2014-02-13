@@ -204,7 +204,7 @@ array(3) {
 }
 ```
 
-#### ContinuosDistribution
+#### ContinuousDistribution
 
 Returns random value from input according to its density. Despite DiscreteDistribution could return float values.
 Has not implemented yet.
