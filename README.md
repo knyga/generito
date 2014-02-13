@@ -16,7 +16,18 @@ use Generito\DiscriptionFactory;
 
 $distribution = (new DistributionFactory)
     ->createDistribution(DiscriptionFactory::DISCRETE)
-    ->setFrequencies($this->frequencies);
+    ->setFrequencies(array(
+      4 => 100,
+      5 => 100,
+      6 => 50,
+      7 => 50,
+      8 => 50,
+      9 => 50,
+      10 => 100,
+      11 => 40,
+      12 => 30,
+      13 => 20,
+      14 => 50));
 
 $this->generator->setDistribution($distribution)
     ->setHandler(function($value) {
