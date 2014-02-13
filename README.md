@@ -74,7 +74,7 @@ Installation via [Composer](http://getcomposer.org/)
     ```json
     {
       "require" {
-        "knyga/generito": "dev-master"
+        "knyga/generito": "1.0.*@dev"
       }
     }
     ```
