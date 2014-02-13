@@ -213,4 +213,5 @@ License
 -------
 
 Generito is licensed under the MIT license.
+
 Oleksandr Knyga <oleksandrknyga@gmail.com>
