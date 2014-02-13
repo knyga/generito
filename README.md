@@ -12,7 +12,7 @@ The library is easy to get up and running quickly.
 <?php
 
 use Generito\Generator;
-use Generito\DiscriptionFactory;
+use Generito\Distribution\DistributionFactory;
 
 $distribution = (new DistributionFactory)
     ->createDistribution(DiscriptionFactory::DISCRETE)
