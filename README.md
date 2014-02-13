@@ -79,7 +79,7 @@ Distributions
 
 The library uses a distribution classes to generate required number of values with required distribution.
 
-### DiscreteDistribution
+#### DiscreteDistribution
 
 Returns random value from input according to its density.
 
