@@ -12,7 +12,7 @@ The library is easy to get up and running quickly.
 <?php
 
 use Generito\Generator;
-use Generito\DiscriptionFactory;
+use Generito\Distribution\DistributionFactory;
 
 $distribution = (new DistributionFactory)
     ->createDistribution(DiscriptionFactory::DISCRETE)
@@ -204,7 +204,7 @@ array(3) {
 }
 ```
 
-#### ContinuosDistribution
+#### ContinuousDistribution
 
 Returns random value from input according to its density. Despite DiscreteDistribution could return float values.
 Has not implemented yet.
@@ -213,4 +213,5 @@ License
 -------
 
 Generito is licensed under the MIT license.
+
 Oleksandr Knyga <oleksandrknyga@gmail.com>
