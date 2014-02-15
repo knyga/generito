@@ -49,7 +49,8 @@ class Generator {
 	 * @return misc
 	 */
 	public function generateOne() {
-		return $this->generate(1)[0];
+		$result = $this->generate(1);
+		return $result[0];
 	}
 
 	/**
